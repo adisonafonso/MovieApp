@@ -1,0 +1,16 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+    <ListPreference
+        android:key="@string/pref_sorting_key"
+        android:title="@string/pref_sorting_Label"
+        android:defaultValue="@string/pref_sorting_popular"
+        android:entries="@array/pref_sorting_options"
+        android:entryValues="@array/pref_sorting_values"
+    />
+
+</PreferenceScreen>
